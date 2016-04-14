@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="shop" id="gTV-IL-0wX" customClass="HWShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="132" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="132" height="186"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CZC-rd-DuZ" userLabel="商品图片">
+                        <rect key="frame" x="0.0" y="0.0" width="132" height="186"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDD-WF-fFp" userLabel="商品价格">
+                        <rect key="frame" x="0.0" y="161" width="132" height="25"/>
+                        <color key="backgroundColor" red="0.2016574585635359" green="0.2016574585635359" blue="0.2016574585635359" alpha="0.35000000000000003" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="fe8-m5-tLa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.73719776459999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iDD-WF-fFp" secondAttribute="trailing" id="Exu-Tq-7m7"/>
+                <constraint firstItem="CZC-rd-DuZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HeP-Ok-7bJ"/>
+                <constraint firstItem="iDD-WF-fFp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Quo-5I-WO1"/>
+                <constraint firstAttribute="bottom" secondItem="CZC-rd-DuZ" secondAttribute="bottom" id="Sg7-r9-G4z"/>
+                <constraint firstAttribute="trailing" secondItem="CZC-rd-DuZ" secondAttribute="trailing" id="lfu-Ny-kNv"/>
+                <constraint firstItem="CZC-rd-DuZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oKS-5v-KaJ"/>
+                <constraint firstAttribute="bottom" secondItem="iDD-WF-fFp" secondAttribute="bottom" id="roB-Mc-fDW"/>
+            </constraints>
+            <size key="customSize" width="132" height="186"/>
+            <connections>
+                <outlet property="iconView" destination="CZC-rd-DuZ" id="VaK-Xw-KNc"/>
+                <outlet property="priceLabel" destination="iDD-WF-fFp" id="qfp-PL-Jfm"/>
+            </connections>
+            <point key="canvasLocation" x="331" y="351"/>
+        </collectionViewCell>
+    </objects>
+</document>
